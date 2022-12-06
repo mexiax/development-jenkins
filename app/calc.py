@@ -31,7 +31,7 @@ class Calculator:
     
     def sqrt(self, x, y=0.5):
         self.check_types(x, y)
-        return int(x ** y)
+        return x ** y
 
     def check_types(self, x, y):
         if not isinstance(x, (int, float)) or not isinstance(y, (int, float)):
